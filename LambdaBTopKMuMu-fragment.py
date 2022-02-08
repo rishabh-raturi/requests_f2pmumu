@@ -63,7 +63,7 @@ lbfilter = cms.EDFilter(
         NumberDaughters = cms.untracked.int32(4),
         DaughterIDs = cms.untracked.vint32(-13, 13, 2212, -321), # mu+ mu- p+ K-
         ParticleID      = cms.untracked.int32(5122),
-        MinPt           = cms.untracked.vdouble(3.,-1.,-1.,-1.),
+        MinPt           = cms.untracked.vdouble(2.5,2.5,-1.,-1.),
         MaxEta          = cms.untracked.vdouble(2.5, 2.5, 2.5, 2.5),
         MinEta          = cms.untracked.vdouble(-2.5, -2.5, -2.5, -2.5)
         )
