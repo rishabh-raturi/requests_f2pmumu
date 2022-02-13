@@ -3,15 +3,15 @@
 ------------------------------------------------------
 |          Mode           |    Filter Efficiency     |
 ------------------------------------------------------
-|   B(s) to JPsi KK       |  8.800e-03 +- 9.339e-04  |
-|   LambdaB to Jpsi pK    |  2.200e-03 +- 4.685e-04  |
-|   B(d) to Jpsi KPi      |  3.050e-02 +- 1.720e-03  |
-|   B(s) to Psi(2s) KK    |  1.030e-02 +- 1.010e-03  |
-|   LambdaB to Psi(2s) pk |  2.100e-03 +- 4.578e-04  |
-|   B(d) to Psi(2s) KPi   |  3.530e-02 +- 1.845e-03  |
-|   B(s) to KK mu mu      |  4.500e-03 +- 6.693e-04  |
-|   LambdaB to pK mu mu   |  1.800e-03 +- 4.239e-04  |
-|   B(d) to K pi mu mu    |  1.950e-02 +- 1.383e-03  |
+|   B(s) to JPsi KK       |  2.800e-03 +- 5.284e-04  |
+|   LambdaB to Jpsi pK    |  1.100e-03 +- 3.315e-04  |
+|   B(d) to Jpsi KPi      |  1.480e-02 +- 1.208e-03  |
+|   B(s) to Psi(2s) KK    |  5.500e-03 +- 7.396e-04  |
+|   LambdaB to Psi(2s) pk |  1.100e-03 +- 3.315e-04  |
+|   B(d) to Psi(2s) KPi   |  1.600e-02 +- 1.255e-03  |
+|   B(s) to KK mu mu      |  2.000e-03 +- 4.468e-04  |
+|   LambdaB to pK mu mu   |  7.000e-04 +- 2.645e-04  |
+|   B(d) to K pi mu mu    |  8.600e-03 +- 9.234e-04  |
 ------------------------------------------------------
 
 
