@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 from Configuration.Generator.Pythia8CommonSettings_cfi import *
-from Configuration.Generator.Pythia8CUEP8M1Settings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
 from GeneratorInterface.EvtGenInterface.EvtGenSetting_cff import *
 
 generator = cms.EDFilter(
@@ -37,7 +37,7 @@ generator = cms.EDFilter(
 #
 Alias      MyB_s0   B_s0
 Alias      Myanti-B_s0   anti-B_s0
-ChargeConj Myanti-B_s0   MyB_s0 
+ChargeConj Myanti-B_s0   MyB_s0
 Alias      MyPsi  psi(2S)
 ChargeConj MyPsi  MyPsi
 #
@@ -59,7 +59,7 @@ End
     ),
     PythiaParameters = cms.PSet(
         pythia8CommonSettingsBlock,
-        pythia8CUEP8M1SettingsBlock,
+        pythia8CP5SettingsBlock,
         processParameters = cms.vstring(
             "SoftQCD:nonDiffractive = on",
             'PTFilter:filter = on', # this turn on the filter
@@ -67,7 +67,7 @@ End
             'PTFilter:scaleToFilter = 1.0'),
         parameterSets = cms.vstring(
             'pythia8CommonSettings',
-            'pythia8CUEP8M1Settings',
+            'pythia8CP5Settings',
             'processParameters',
         )
     )
@@ -86,7 +86,7 @@ decayfilter = cms.EDFilter(
     NumberDaughters = cms.untracked.int32(3),
     ParticleID      = cms.untracked.int32(531),
     DaughterIDs     = cms.untracked.vint32(-321, 321, 100443),  ## K-, K+, PSI(2S)
-    MinPt           = cms.untracked.vdouble(0.4, 0.4, -1.),
+    MinPt           = cms.untracked.vdouble(0.4, 0.4, 6.0),
     MinEta          = cms.untracked.vdouble(-2.5, -2.5, -9999.),
     MaxEta          = cms.untracked.vdouble( 2.5,  2.5,  9999.)
     )
@@ -97,7 +97,7 @@ psi2sfilter = cms.EDFilter(
     ParticleID = cms.untracked.int32(100443),
     NumberDaughters = cms.untracked.int32(2),
     DaughterIDs = cms.untracked.vint32(13, -13),
-    MinPt = cms.untracked.vdouble(2.5, 2.5),
+    MinPt = cms.untracked.vdouble(3.5, 3.5),
     MinEta = cms.untracked.vdouble(-2.5, -2.5),
     MaxEta = cms.untracked.vdouble(2.5, 2.5),
     verbose = cms.untracked.int32(1)

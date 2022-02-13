@@ -81,21 +81,23 @@ lbfilter = cms.EDFilter(
         "PythiaDauVFilter",
         verbose         = cms.untracked.int32(1),
         NumberDaughters = cms.untracked.int32(3),
-        DaughterIDs = cms.untracked.vint32(100443, 2212, -321), # psi(2s) p+ K- 
+        DaughterIDs = cms.untracked.vint32(100443, 2212, -321), # psi(2s) p+ K-
         ParticleID      = cms.untracked.int32(5122),
-        MinPt           = cms.untracked.vdouble(3.,-1.,-1.),
+        MinPt           = cms.untracked.vdouble(6.0,0.4,0.4),
         MaxEta          = cms.untracked.vdouble(2.5, 2.5, 2.5),
         MinEta          = cms.untracked.vdouble(-2.5, -2.5, -2.5)
         )
 
 Psi2sfilter = cms.EDFilter(
         "PythiaDauVFilter",
+        MotherID = cms.untracked.int32(5122),
         NumberDaughters = cms.untracked.int32(2),
         DaughterIDs = cms.untracked.vint32(13,-13), # mu+ mu-
         ParticleID      = cms.untracked.int32(100443),
-        MinPt           = cms.untracked.vdouble(3.,3.),
-        MaxEta          = cms.untracked.vdouble(2.5, 2.5, 2.5),
-        MinEta          = cms.untracked.vdouble(-2.5, -2.5, -2.5)
+        MinPt           = cms.untracked.vdouble(3.5,3.5),
+        MaxEta          = cms.untracked.vdouble(2.5, 2.5),
+        MinEta          = cms.untracked.vdouble(-2.5, -2.5),
+        verbose = cms.untracked.int32(1)
         )
 
 ProductionFilterSequence = cms.Sequence(generator*bfilter*lbfilter*Psi2sfilter)

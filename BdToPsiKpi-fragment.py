@@ -76,7 +76,7 @@ decayfilter = cms.EDFilter(
     NumberDaughters = cms.untracked.int32(3),
     ParticleID      = cms.untracked.int32(511),
     DaughterIDs     = cms.untracked.vint32(-211, 321, 100443),  ## pi-, K+, PSI(2S)
-    MinPt           = cms.untracked.vdouble(0.4, 0.4, -1.),
+    MinPt           = cms.untracked.vdouble(0.4, 0.4, 6.0),
     MinEta          = cms.untracked.vdouble(-2.5, -2.5, -9999.),
     MaxEta          = cms.untracked.vdouble( 2.5,  2.5,  9999.)
     )
@@ -87,7 +87,7 @@ psi2sfilter = cms.EDFilter(
     ParticleID = cms.untracked.int32(100443),
     NumberDaughters = cms.untracked.int32(2),
     DaughterIDs = cms.untracked.vint32(13, -13),
-    MinPt = cms.untracked.vdouble(2.5, 2.5),
+    MinPt = cms.untracked.vdouble(3.5, 3.5),
     MinEta = cms.untracked.vdouble(-2.5, -2.5),
     MaxEta = cms.untracked.vdouble(2.5, 2.5),
     verbose = cms.untracked.int32(1)
