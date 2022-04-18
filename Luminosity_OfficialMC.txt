@@ -1,0 +1,30 @@
+
+
+                            Number of events in MINIAODSIM dataset
+MC Luminosity = --------------------------------------------------------------------
+                  Pythia P-P cross section * filter efficiency * Branching fraction
+
+
+BsTof2pMuMu
+
+2016 v1 >>>> BPH-RunIISummer20UL16GEN-00102
+
+------------------------------------
+GenXsecAnalyzer:
+------------------------------------
+Before Filter: total cross section = 5.569e+08 +- 1.752e+07 pb
+Filter efficiency (taking into account weights)= (3) / (1000) = 3.000e-03 +- 1.729e-03
+Filter efficiency (event-level)= (3) / (1000) = 3.000e-03 +- 1.729e-03    [TO BE USED IN MCM]
+
+After filter: final cross section = 1.671e+06 +- 9.645e+05 pb
+After filter: final fraction of events with negative weights = 0.000e+00 +- 0.000e+00
+After filter: final equivalent lumi for 1M events (1/fb) = 5.986e-04 +- 3.456e-04
+TimeReport> Time report complete in 1091.93 seconds
+
+#Events in MINIAODSIM                   = 105778428
+Pythia P-P cross section, after filter  = 1.671e+06 +- 9.645e+05 pb
+filter efficiency                       = 3.000e-03 +- 1.729e-03
+total branching fraction                = (1.57e-07)*(43.8e-02)
+
+Luminosity                              = 3.068e+08 fb^{-1}
+
