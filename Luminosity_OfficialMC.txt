@@ -22,9 +22,9 @@ After filter: final equivalent lumi for 1M events (1/fb) = 5.986e-04 +- 3.456e-0
 TimeReport> Time report complete in 1091.93 seconds
 
 #Events in MINIAODSIM                   = 105778428
-Pythia P-P cross section, after filter  = 1.671e+06 +- 9.645e+05 pb
+Pythia P-P cross section                = 5.569e+08 +- 1.752e+07 pb
 filter efficiency                       = 3.000e-03 +- 1.729e-03
 total branching fraction                = (1.57e-07)*(43.8e-02)
 
-Luminosity                              = 3.068e+08 fb^{-1}
+Luminosity                              = 920714.26 fb^-1
 
